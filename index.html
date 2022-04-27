@@ -11,6 +11,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Helvetica',Arial,sans-serif;
     }
 
     .preload-img {
@@ -31,6 +32,14 @@
     .container {
       max-width: 100%;
       padding: 1rem 2rem;
+      padding-top: 4rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      .container {
+        max-width: 620px;
+        margin: 0 auto;
+      }
     }
 
     img.img-fluid {
@@ -48,7 +57,7 @@
 
       border: 0;
 
-      margin: 2rem 0;
+      margin: 3rem 0;
       color: transparent;
       cursor: pointer;
     }
@@ -62,6 +71,8 @@
 
     .modal-container {
       display: none;
+      background: rgba(0, 0, 0, 0.0);
+      transition: all .3s;
     }
 
     .modal-container.shown {
@@ -73,9 +84,10 @@
       height: 100%;
 
       justify-content: center;
-      align-items: center;
+      /* align-items: center; */
+      margin-top: 4rem;
 
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.9);
     }
 
     .modal-container.shown .modal-body {
@@ -89,10 +101,57 @@
       font-size: 2rem;
     }
 
+    .close-container {
+      display: block;
+      margin: 3rem 0 0;
+    }
+
+    .title-rating {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .title-rating h2 {
+      font-size: 22px;
+      padding-right: 1rem;
+    }
+
+    .btn-confirm-download {
+      font-size: 38px;
+      color: white;
+      font-weight: bold;
+      display: block;
+      background: rgba(255, 255, 255, .4);
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      transition: all .2s;
+    }
+    
+    .btn-confirm-download:hover {
+      color: black;
+      background: rgba(255, 255, 255, 1);
+    }
+
+    .btn-close {
+      border: 0;
+      font-size: 24px;
+      color: white;
+      background: transparent;
+      cursor: pointer;
+    }
+
     .on-center {
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .img-classificacao {
+      width: 42px;
+      height: auto;
     }
   </style>
 </head>
@@ -112,11 +171,18 @@
 
   <div class="modal-container">
     <div class="modal-body">
-      <h2>Tem certeza?</h2>
+      <div class="title-rating">
+        <h2>classificação</h2>
+        <img src="./assets/img/12.png" alt="indicação" class="img-classificacao" />
+      </div>
 
-      <button class="btn-close">
-        não
-      </button>
+      <a class="btn-confirm-download" href="#">BAIXAR O QUADRINHO</a>
+
+      <div class="close-container">
+        <button class="btn-close">
+          fechar
+        </button>
+      </div>
     </div>
   </div>
 
