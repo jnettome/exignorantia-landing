@@ -170,6 +170,17 @@ img.vr {
   margin: 1.5rem 0;
 }
 
+.video-embed {
+  width: 100%;
+  /* border: 2px solid var(--text-color); */
+  /* border-radius: 50px; */
+}
+.video-embed iframe.video-iframe {
+  width: 100%;
+  /* margin: 1.5rem 0; */
+  border-radius: 50px;
+}
+
 .catarse-cta {
   margin: 4rem 0 1rem;
 }
