@@ -69,6 +69,15 @@ p {
   color: white;
 }
 
+.btn-borderless {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 3px solid var(--text-color);
+  max-width: 340px;
+  padding: 0 0 0.5rem;
+  margin-top: 2rem;
+}
+
 .container {
   max-width: 100%;
   padding: 1rem 2rem;
@@ -127,6 +136,10 @@ hr.hr1 {
   border: 0;
   height: 41px;
   margin: 2rem auto;
+}
+
+hr.hr1.last {
+  margin: 4rem auto;
 }
 
 hr.hr3 {
@@ -211,9 +224,13 @@ img.vr {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
-  max-width: 420px;
+  padding: 0 40px;
+}
+
+.social-content .social-icons.first {
+  padding: 0 160px;
 }
 
 .social-content .social-icons a {
@@ -221,7 +238,7 @@ img.vr {
 }
 
 .social-content .social-icons a img.icon {
-  width: 60px;
+  width: 72px;
   height: auto;
 }
 
