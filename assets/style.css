@@ -226,11 +226,13 @@ img.vr {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  padding: 0 40px;
+  padding: 0 0;
 }
 
 .social-content .social-icons.first {
-  padding: 0 160px;
+  padding: 0 40px;
+  justify-content: space-around;
+  max-width: 250px;
 }
 
 .social-content .social-icons a {
@@ -266,6 +268,17 @@ img.vr {
   .container {
     position: relative;
     z-index: 1;
+  }
+
+  .social-content .social-icons {
+    padding: 0 40px;
+  }
+
+  .social-content .social-icons.first {
+    padding: 0 160px;
+    width: 100%;
+    flex-wrap: nowrap;
+    max-width: 100%;
   }
 
   .form-embed {
