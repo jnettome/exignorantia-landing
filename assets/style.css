@@ -220,6 +220,10 @@ img.vr {
   margin-bottom: 2rem;
 }
 
+.social-content .btn.btn-borderless {
+  line-height: 1.5;
+}
+
 .social-content .social-icons {
   display: flex;
   flex-wrap: wrap;
